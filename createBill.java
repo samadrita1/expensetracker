@@ -9,22 +9,10 @@ import javax.servlet.http.*;
 @WebServlet("/createBill")
 public class createBill extends HttpServlet {  
 public void doGet(HttpServletRequest request, HttpServletResponse response)  
-            throws ServletException, IOException { 
-	
-PrintWriter out = response.getWriter();  
-	
-HttpSession session= request.getSession();
-if(session!=null){  
-    String name=(String)session.getAttribute("userid");  
-      
-    out.print("You may proceed User "+name);  
-    }  
-    else{  
-        out.print("Please login first");  
-        request.getRequestDispatcher("login.java").include(request, response);  
-    }  
+            throws ServletException, IOException {  
   
 response.setContentType("text/html");  
+PrintWriter out = response.getWriter();  
           
 String n=request.getParameter("Bill_id");  
 String p=request.getParameter("Bill_grpID");  
