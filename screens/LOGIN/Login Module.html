@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="h.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+    <body link="black">
+        <center>
+            <h2>Login Module</h2>
+            <form>
+            <div class="square">
+                <div class="content">
+                    <div class="position">
+                        <img src="login avatar.png"></br>   
+                    </br>  
+                    <label class="control-label " for="Username"><br></label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                            </div>
+                            <input class="form-control" id="Username" name="user" type="text" placeholder="email-id">
+                        </div>
+                            <br>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                            </div>
+                            <input class="form-control" id="Username" name="user" type="password" placeholder="password">
+                        </div>                        
+                        <div>
+                            <input type="checkbox" name="RM" value="RM">Remember me<br>
+                        </div>
+                        <button type="button" class="btn btn-default dropdown-toggle">Login</button>
+                    </div>
+
+                    <div class="popup" onclick="myFunction()"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                        <span class="popuptext" id="myPopup">Forgot Password?</span>
+                    </div>
+                        <script>
+                        function myFunction() {
+                        var popup = document.getElementById("myPopup");
+                            popup.classList.toggle("show");
+                            }
+                        </script>                        
+                </div>
+            </div>
+            </form>
+        </center>
+        <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
